@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="css/style.css">  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/replace.js"></script>
+  <script src="https://use.fontawesome.com/50ca42810b.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+
+<body style="background-color: #34495e;">
+<section id="firstnav">
+<nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo" id="logotext">DL</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="large material-icons"><i class="fa fa-bars" aria-hidden="true"></i></i></a>
+      <ul class="right hide-on-med-and-down" >
+        <li><a href="#firstnav">Général</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#portfollio">Port-Follio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#firstnav">Général</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#portfollio">Port-Follio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</section>
+
+<section style="background-color: #ecf0f1">
+  <div class="container-fluid">
+    <div class="row" style="text-align: center;">
+      <div class="col s12 m6 l2" style="margin-top: 30px;">
+        <button class="btn tooltipped" id="btnchange4" data-position="bottom" data-delay="50" data-tooltip="Version Bleu Nuit" onclick="ColorMBlue();"></button>
+      </div>
+      <div class="col s12 m6 l2" style="margin-top: 30px;">
+        <button class="btn tooltipped" id="btnchange2" data-position="bottom" data-delay="50" data-tooltip="Version Bleu" onclick="ColorBlue();"></button>
+      </div>
+      <div class="col s12 m6 l2" style="margin-top: 30px;">
+        <button class="btn tooltipped" id="btnchange3" data-position="bottom" data-delay="50" data-tooltip="Version Vert" onclick="ColorGreen();"></button>
+      </div>
+      <div class="col s12 m6 l2" style="margin-top: 30px; margin-bottom: 30px;">
+        <button class="btn tooltipped" id="btnchange1" data-position="bottom" data-delay="50" data-tooltip="Version Rouge" onclick="ColorRed();"></button>
+      </div>
+      <div class="col s12 m6 l2" style="margin-top: 30px; margin-bottom: 30px;">
+        <button class="btn tooltipped" id="btnchange5" data-position="bottom" data-delay="50" data-tooltip="Version Orange" onclick="ColorOrange();"></button>
+      </div>
+      <div class="col s12 m6 l2" style="margin-top: 30px; margin-bottom: 30px;">
+        <button class="btn tooltipped" id="btnchange6" data-position="bottom" data-delay="50" data-tooltip="Version Violet" onclick="ColorViolet();"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="intro" style="background-color: #34495e;">
+    <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12" style="text-align: center;">
+        <h3 id="titlelol">David Lecoin, Développeur Web <br>passionné, créatif et curieux</h3>
+        <a id="btnlol" href="#aboutme"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+<section id="mainprepa" style="background: #ecf0f1">
+  <div class="container-fluid" style="margin-top: 150px;">
+    <div class="row">
+      <ul id="joke">
+        <li style="opacity: 0">
+      <div class="col s12 m6 l6 center" style="margin-top: 25px;">
+        <i class="fa fa-html5" style="font-size: 50px;"></i><br>
+        <h3 id="mainprepatitle" style="font-weight: bold; color: #2c3e50">Front-End</h3>
+        <p style="font-size: 25px;">Déployer des sites intéractifs d'une nouvelle génération.</p>
+      </div>
+    </li>
+      <li style="opacity: 0">
+      <div class="col s12 m6 l6 center" style="margin-top: 25px;">
+        <i class="fa fa-database" style="font-size: 50px;"></i><br>
+        <h3 id="mainprepatitle1" style="font-weight: bold; color: #2c3e50">Back-End</h3>
+        <p style="font-size: 25px;">Lecture des données plus rapides, recherches plus claires.</p>
+      </div>
+    </li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+<section id="aboutme">
+  <div class="container">
+  <div class="row">
+      <div class="col s12 m12 l12" style="margin-top: 100px; margin-bottom: 50px;">
+          <div class="card" id="cardabout" style="background-color: #ecf0f1;">
+    <div class="card-content" id="abouttitle" style="text-align: center; background-color: #2c3e50">
+      <h3>À propos de moi.</h3>
+    </div>
+    <div class="card-tabs" style="background-color: #ecf0f1 !important;">
+      <ul class="tabs tabs-fixed-width" style="background-color: #ecf0f1 !important;">
+        <li class="tab" style="background-color: #ecf0f1;"><a class="active" href="#leposi">Positif</a></li>
+        <li class="tab" style="background-color: #ecf0f1;"><a href="#lenega">Négatif</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4" style="text-align: center; background-color: #ecf0f1 !important;">
+      <div id="leposi" style="background-color: #ecf0f1;">Maîtrise des bases : HTML, CSS, JavaScript, JQuery, SQL, PHP et BootStrap.<br>
+        Créer des sites qui se démarquent des autres, faciliter l'information et répondre aux utilisateurs.<br>
+        Néglige les CMS car j'aime me différencier des autres, donc monter mes sites entièrement seul en utilisant des FrameWorks/Librairies (BootStrap et Materialize)<br>
+        Un large esprit, ouvert à tous les sujets, capable de critiquer et apporter des solutions aux personnes qui sont dans le besoin.</div>
+      <div id="lenega" style="background-color: #ecf0f1;">La gestion et l'administration des bases de données<br>
+        Encore beaucoup à apprendre par rapport à un Développeur Web Sénior</div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script type="text/javascript">
+  function showpar1(){
+    var showparcours1 = document.getElementById('parcours1')
+    if( showparcours1.style.display === "none"){
+        showparcours1.style.display = "block";
+    }
+    else{
+        showparcours1.style.display = "none";
+    }
+
+    var showparcours2 = document.getElementById('parcours2')
+    if( showparcours2.style.display === "block"){
+      showparcours2.style.display = "none"
+    }
+    else{
+      showparcours2.style.display = "none";
+    }
+}
+</script>
+
+<script>
+  function showpar2(){
+    var showparcours2 = document.getElementById('parcours2')
+    if( showparcours2.style.display === "none"){
+      showparcours2.style.display = "block"
+    }
+    else{
+      showparcours2.style.display = "none";
+    }
+
+    var showparcours1 = document.getElementById('parcours1')
+    if(showparcours1.style.display === "block"){
+      showparcours1.style.display = "none"
+    }
+    else{
+      showparcours1.style.display = "none";
+    }
+  }
+</script>
+
+<section id="parcours" style="background-color: #ecf0f1 !important;">
+
+  <div class="container-fluid" style="background-color: #ecf0f1 !important">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h3 style="text-align: center; font-weight: bold;">Parcours</h3>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col s12 m6 l6" style="text-align: center; margin-top: 20px; margin-bottom: 20px; background-color: #ecf0f1 !important">
+  <button class='btn' id="btnshow" onclick="showpar1();" style="background-color: #34495e;color: black;">Études</a>
+    </div>
+    <div class="col s12 m6 l6" style="text-align: center; margin-top: 20px; margin-bottom: 20px; background-color: #ecf0f1 !important">
+    <button class='btn' id="btnshow1" onclick="showpar2();" style="background-color: #34495e; color: black;">Professionnel</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section id="parcours1" style="display: none;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col s12 m12 l6">
+          <div class="card" style="text-align: center;">
+            <div class="card-content black-text"  style="background-color: #fff">
+              <span class="card-title" style="text-align: center;"><h3>Bac STI2D  <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3></span>
+            </div>
+            <div class="card-content black-text" style="background-color: #ecf0f1">
+              <p>BAC Sciences et Technologies de l'Industrie et du Développement Durable.<br>
+              J'ai ensuite suivi une formation online.</p>
+            </div>
+      </div>
+       </div>
+       <div class="col s12 m12 l6">
+          <div class="card" style="text-align: center;">
+            <div class="card-content black-text" style="background-color: #fff">
+              <span class="card-title" style="text-align: center;"><h3>Formation Web  <i class="fa fa-chrome" aria-hidden="true"></i></h3></span>
+            </div>
+            <div class="card-content black-text" style="background-color: #ecf0f1">
+              <p>Formation de 3 mois dans le développement web (non reconnu par l'état) sur Udemy.<br>
+              Premier entretien avec des auto-entrepreneurs pour refaire leur site.</p>
+            </div>
+      </div>
+       </div>
+    </div>
+     <div class="row">
+      <div class="col s12 m12 l6">
+          <div class="card" style="text-align: center;">
+            <div class="card-content black-text"  style="background-color: #fff">
+              <span class="card-title" style="text-align: center;"><h3>Web Designer  <i class="fa fa-pencil" aria-hidden="true"></i></h3></span>
+            </div>
+            <div class="card-content black-text" style="background-color: #ecf0f1">
+              <p>Formation online sur le design des sites (Web Design).</p>
+            </div>
+      </div>
+       </div>
+       <div class="col s12 m12 l6">
+          <div class="card" style="text-align: center;">
+            <div class="card-content black-text"  style="background-color: #fff">
+              <span class="card-title" style="text-align: center;"><h3>ReactJS+Redux  <i class="fa fa-facebook-square" aria-hidden="true"></i></h3></span>
+            </div>
+            <div class="card-content black-text" style="background-color: #ecf0f1">
+              <p>Formation complète ReactJS + Redux.</p>
+            </div>
+      </div>
+       </div>
+  </div>
+</section>
+
+<section id="parcours2" style="display: none;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col s12 m12 l6">
+          <div class="card" style="text-align: center;">
+            <div class="card-content black-text"  style="background-color: #fff">
+              <span class="card-title" style="text-align: center;"><h3>FreeLance  <i class="fa fa-briefcase" aria-hidden="true"></i></h3></span>
+            </div>
+            <div class="card-content black-text" style="background-color: #ecf0f1">
+              <p>Inscriptions sur des plate-formes de FreeLance.</p>
+            </div>
+      </div>
+       </div>
+       <div class="col s12 m12 l6">
+          <div class="card" style="text-align: center;">
+            <div class="card-content black-text" style="background-color: #fff">
+              <span class="card-title" style="text-align: center;"><h3>Projets  <i class="fa fa-handshake-o" aria-hidden="true"></i></h3></span>
+            </div>
+            <div class="card-content black-text" style="background-color: #ecf0f1">
+              <p>Discussion entre professionnels dans le but de moderniser leur site.</p>
+            </div>
+      </div>
+       </div>
+    </div>
+     <div class="row">
+      <div class="col s12 m12 l6 offset-l3">
+          <div class="card" style="text-align: center;">
+            <div class="card-content black-text"  style="background-color: #fff">
+              <span class="card-title" style="text-align: center;"><h3>Tosca  <i class="fa fa-cutlery" aria-hidden="true"></i></h3></span>
+            </div>
+            <div class="card-content black-text" style="background-color: #ecf0f1">
+              <p>Modernisation de site <a href="http://www.latosca.fr" target="_blank">LaTosca<i class="fa fa-location-arrow"></i></a>.</p>
+            </div>
+      </div>
+       </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" style="background-color: #ECF0F1;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col s12 m12 l12" style="margin-top: 30px;">
+        <h3 style="text-align: center; font-weight: bold;">Compétences</h3>
+      </div>
+    </div>
+      <div class="row" >
+        <div class="col s12 m6 l4" style="margin-top: 50px; margin-bottom: 50px;">
+          <h3 style="text-align: center;">Front-End</h3>
+            <canvas id="pieChart"></canvas>
+            <script>
+              var ctxP = document.getElementById("pieChart").getContext('2d');
+              var myPieChart = new Chart(ctxP, {
+                  type: 'pie',
+                  data: {
+                      labels: ["HTML", "CSS", "JavaScript"],
+                      datasets: [
+                          {
+                              data: [100, 100, 80],
+                              backgroundColor: ["#1DABB8", "#9b59b6", "#34495e"],
+                              hoverBackgroundColor: ["#1DABB8", "#9b59b6", "#2c3e50"]
+                          }
+                      ]
+                  },  
+              });
+            </script>
+        </div>
+        <div class="col s12 m6 l4" style="margin-top: 50px; margin-bottom: 50px;">
+            <h3 style="text-align: center;">Back-End</h3>
+              <canvas id="newpieChart"></canvas>
+              <script>
+                var ctxP = document.getElementById("newpieChart").getContext('2d');
+                var mynewPieChart = new Chart(ctxP, {
+                    type: 'pie',
+                    data: {
+                        labels: ["PHP", "Ajax", "Python"],
+                        datasets: [
+                            {
+                                data: [80, 70, 70],
+                                backgroundColor: ["#1DABB8", "#9b59b6", "#34495e"],
+                                hoverBackgroundColor: ["#1DABB8", "#9b59b6", "#2c3e50"]
+                            }
+                        ]
+                    },  
+                });
+              </script>
+          </div>
+          <div class="col s12 m6 l4" style="margin-top: 50px; margin-bottom: 50px;">
+              <h3 style="text-align: center;">FrameWorks</h3>
+                <canvas id="newlastpieChart"></canvas>
+                <script>
+                  var ctxP = document.getElementById("newlastpieChart").getContext('2d');
+                var mynewPieChart = new Chart(ctxP, {
+                    type: 'pie',
+                    data: {
+                        labels: ["BootStrap", "ReactJS", "Materialize", "VueJS", "Angular"],
+                        datasets: [
+                            {
+                                data: [90, 80, 90, 70, 60],
+                                backgroundColor: ["#1DABB8", "#9b59b6", "#34495e", "#95a5a6", "#3A539B"],
+                                hoverBackgroundColor: ["#1DABB8", "#9b59b6", "#2c3e50", "#7f8c8d", "#1F3A93"]
+                            }
+                        ]
+                    },  
+                });
+                </script>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <h3 style="text-align: center;">Base De Données</h3>
+          <canvas id="newlastpieCharts"></canvas>
+          <script>
+          new Chart(document.getElementById("newlastpieCharts"), {
+   type: 'doughnut',
+    data: {
+      labels: ["SQL", "PostgreSQL", "Oracle"],
+      datasets: [
+        {
+          label: "BDD",
+          backgroundColor: ["#1DABB8", "#9b59b6", "#34495e"],
+          data: [80,60,20]
+        }
+      ]
+    },
+});
+</script>
+        </div>
+        <div class="col s12 m6 l6">
+          <h3 style="text-align: center;">IDE (fréquences d'utilisation)</h3>
+          <canvas id="newlastpieChartss"></canvas>
+          <script>
+          new Chart(document.getElementById("newlastpieChartss"), {
+   type: 'radar',
+    data: {
+      labels: ["SublimeText", "Atom", "Ultra Edit", "Visual Code Editor", "Notepad++"],
+      datasets: [
+        {
+          label: "/10",
+          fill: true,
+          backgroundColor: "rgba(46,24,213,0.2)",
+          borderColor: "#2c3e50",
+          pointBorderColor: "#2c3e50",
+          pointBackgroundColor: "#2c3e50",
+          data: [9.50,4.61,5.00,7.50,2.00]
+        }
+      ]
+    },
+});
+</script>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m6 l6">
+          <h3 style="text-align: center;">Communauté</h3>
+          <canvas id="newbar"></canvas>
+          <script>
+          new Chart(document.getElementById("newbar"), {
+  type: 'horizontalBar',
+    data: {
+      labels: ["Git", "StackOverFlow", "Trello"],
+      datasets: [
+        {
+          label: "Utilisation /100",
+          backgroundColor: ["#1DABB8", "#9b59b6", "#34495e"],
+          data: [70,80,50]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+</script>
+        </div>
+        <div class="col s12 m6 l6">
+          <h3 style="text-align: center;">Système d'Exploitation</h3>
+          <canvas id="oscanv"></canvas>
+          <script>
+          new Chart(document.getElementById("oscanv"), {
+   type: 'doughnut',
+    data: {
+      labels: ["Windows", "Unix", "Mac"],
+      datasets: [
+        {
+          backgroundColor: ["#1DABB8", "#9b59b6", "#34495e"],
+          data: [100,70,10]
+        }
+      ]
+    },
+});
+</script>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="portfollio" style="background-color: #ECF0F1">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <h2>PortFolio<i class="fa fa-"></i></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <h4>Balayez les images avec votre souris ou votre doigt (Tactile)</h4>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <i class="fa fa-arrows-h" style="font-size: 50px;"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12" style="margin-top: 10px; margin-bottom: 50px;">
+        <div class="carousel carousel-slider" data-indicators="true">
+          <a class="carousel-item section scrollspy" href="#one!"><img src="./images/tosca.png" height="100%"></a>
+          <a class="carousel-item section scrollspy" href="#two!"><img src="./images/concours.png" height="100%"></a>
+          <a class="carousel-item section scrollspy" href="#three!"><img src="./images/burger.png" height="100%"></a>
+          <a class="carousel-item section scrollspy" href="#four!"><img src="./images/dev.png" height="100%"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="contact">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col s12 m12 l12 center-align">
+        <p style="font-size: 40px; font-weight: bold;">Contact</p>
+      </div>
+    </div>
+    <div class="row" style="text-align: center;">
+      <div class="col s12 m4 l4">
+<ul class="collapsible" id="con1" data-collapsible="accordion" style="border: 1px solid #34495e; background-color: #fff !important;">
+    <li>
+      <div class="collapsible-header">E-mail   <i class="fa fa-envelope"></i></div>
+      <div class="collapsible-body"><span><a href="mailto:dwl3c0in@gmail.com?subject=Besoin de votre aide pour un projet." id="themail">  dwl3c0in@gmail.com</a></span></div>
+    </li>
+  </ul>
+</div>
+<div class="col s12 m4 l4">
+<ul class="collapsible" id="con2" data-collapsible="accordion" style="border: 1px solid #34495e; background-color: #fff !important;">
+    <li>
+      <div class="collapsible-header center-align">Téléphone    <i class="fa fa-phone"></i></div>
+      <div class="collapsible-body"><span><a href="tel:+33659920699" id="themail">  06-59-92-06-99</a></span></div>
+    </li>
+  </ul>
+</div>
+<div class="col s12 m4 l4">
+<ul class="collapsible" id="con3" data-collapsible="accordion" style="border: 1px solid #34495e; background-color: #fff !important;">
+    <li>
+      <div class="collapsible-header">Services   <i class="fa fa-medkit"></i></div>
+      <div class="collapsible-body"><span><a href="http://www.devfacile.rf.gd" target="_blank" id="themail">  DevFacile</a></span></div>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+</section>
+
+
+</body>
+</html>
