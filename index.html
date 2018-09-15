@@ -200,37 +200,13 @@
 <section id="parcours1" style="display: none;">
   <div class="container-fluid">
     <div class="row">
-      <div class="col s12 m12 l6">
-          <div class="card" style="text-align: center;">
-            <div class="card-content black-text"  style="background-color: #fff">
-              <span class="card-title" style="text-align: center;"><h3>Bac STI2D  <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3></span>
-            </div>
-            <div class="card-content black-text" style="background-color: #ecf0f1">
-              <p>BAC Sciences et Technologies de l'Industrie et du Développement Durable.<br>
-              J'ai ensuite suivi une formation online.</p>
-            </div>
-      </div>
-       </div>
        <div class="col s12 m12 l6">
           <div class="card" style="text-align: center;">
             <div class="card-content black-text" style="background-color: #fff">
               <span class="card-title" style="text-align: center;"><h3>Formation Web  <i class="fa fa-chrome" aria-hidden="true"></i></h3></span>
             </div>
             <div class="card-content black-text" style="background-color: #ecf0f1">
-              <p>Formation de 3 mois dans le développement web (non reconnu par l'état) sur Udemy.<br>
-              Premier entretien avec des auto-entrepreneurs pour refaire leur site.</p>
-            </div>
-      </div>
-       </div>
-    </div>
-     <div class="row">
-      <div class="col s12 m12 l6">
-          <div class="card" style="text-align: center;">
-            <div class="card-content black-text"  style="background-color: #fff">
-              <span class="card-title" style="text-align: center;"><h3>Web Designer  <i class="fa fa-pencil" aria-hidden="true"></i></h3></span>
-            </div>
-            <div class="card-content black-text" style="background-color: #ecf0f1">
-              <p>Formation online sur le design des sites (Web Design).</p>
+              <p>Formation de 3 mois dans le développement web (non reconnu par l'état) sur Udemy.</p>
             </div>
       </div>
        </div>
@@ -244,7 +220,8 @@
             </div>
       </div>
        </div>
-  </div>
+     </div>
+     </div>
 </section>
 
 <section id="parcours2" style="display: none;">
@@ -253,32 +230,20 @@
       <div class="col s12 m12 l6">
           <div class="card" style="text-align: center;">
             <div class="card-content black-text"  style="background-color: #fff">
-              <span class="card-title" style="text-align: center;"><h3>FreeLance  <i class="fa fa-briefcase" aria-hidden="true"></i></h3></span>
+              <span class="card-title" style="text-align: center;"><h3>Tosca  <i class="fa fa-cutlery" aria-hidden="true"></i></h3></span>
             </div>
             <div class="card-content black-text" style="background-color: #ecf0f1">
-              <p>Inscriptions sur des plate-formes de FreeLance.</p>
+              <p>Création du site <a href="http://www.latosca.fr" target="_blank">LaTosca<i class="fa fa-location-arrow"></i></a>.</p>
             </div>
       </div>
        </div>
        <div class="col s12 m12 l6">
           <div class="card" style="text-align: center;">
             <div class="card-content black-text" style="background-color: #fff">
-              <span class="card-title" style="text-align: center;"><h3>Projets  <i class="fa fa-handshake-o" aria-hidden="true"></i></h3></span>
+              <span class="card-title" style="text-align: center;"><h3>KeyWOrd  <i class="fa fa-handshake-o" aria-hidden="true"></i></h3></span>
             </div>
             <div class="card-content black-text" style="background-color: #ecf0f1">
-              <p>Discussion entre professionnels dans le but de moderniser leur site.</p>
-            </div>
-      </div>
-       </div>
-    </div>
-     <div class="row">
-      <div class="col s12 m12 l6 offset-l3">
-          <div class="card" style="text-align: center;">
-            <div class="card-content black-text"  style="background-color: #fff">
-              <span class="card-title" style="text-align: center;"><h3>Tosca  <i class="fa fa-cutlery" aria-hidden="true"></i></h3></span>
-            </div>
-            <div class="card-content black-text" style="background-color: #ecf0f1">
-              <p>Modernisation de site <a href="http://www.latosca.fr" target="_blank">LaTosca<i class="fa fa-location-arrow"></i></a>.</p>
+              <p>Création du jeu <a href="http://www.kword.rf.gd" target="_blank">KeyWord<i class="fa fa-location-arrow"></i></a>.</p>
             </div>
       </div>
        </div>
@@ -323,10 +288,10 @@
                 var mynewPieChart = new Chart(ctxP, {
                     type: 'pie',
                     data: {
-                        labels: ["PHP", "Ajax", "Python"],
+                        labels: ["PHP", "Ruby", "Python"],
                         datasets: [
                             {
-                                data: [80, 70, 70],
+                                data: [80, 30, 70],
                                 backgroundColor: ["#1DABB8", "#9b59b6", "#34495e"],
                                 hoverBackgroundColor: ["#1DABB8", "#9b59b6", "#2c3e50"]
                             }
@@ -343,10 +308,10 @@
                 var mynewPieChart = new Chart(ctxP, {
                     type: 'pie',
                     data: {
-                        labels: ["BootStrap", "ReactJS", "Materialize", "VueJS", "Angular"],
+                        labels: ["BootStrap", "ReactJS", "Django", "VueJS", "Angular"],
                         datasets: [
                             {
-                                data: [90, 80, 90, 70, 60],
+                                data: [90, 80, 80, 70, 60],
                                 backgroundColor: ["#1DABB8", "#9b59b6", "#34495e", "#95a5a6", "#3A539B"],
                                 hoverBackgroundColor: ["#1DABB8", "#9b59b6", "#2c3e50", "#7f8c8d", "#1F3A93"]
                             }
@@ -364,7 +329,7 @@
           new Chart(document.getElementById("newlastpieCharts"), {
    type: 'doughnut',
     data: {
-      labels: ["SQL", "PostgreSQL", "Oracle"],
+      labels: ["SQL", "SQLite", "MongoDB"],
       datasets: [
         {
           label: "BDD",
