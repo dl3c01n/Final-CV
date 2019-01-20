@@ -9,11 +9,11 @@ $(document).ready(function() {
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   var options = [
       // STAGGERED LIST TRANSITION
-      {selector: '#joke', offset: 100, callback: function(el) {
+      {selector: '#joke', offset: 1000, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } },
       // FADE IN ANY IMAGES IN THE STAGGERED LIST       
-      {selector: '#joke', offset: 100, callback: function(el) {
+      {selector: '#joke', offset: 1000, callback: function(el) {
         Materialize.fadeInImage($(el));
       } }
     ];
